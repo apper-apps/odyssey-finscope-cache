@@ -1,0 +1,54 @@
+[
+  {
+    "Id": 1,
+    "financialDataId": "1",
+    "liquidityRatios": {
+      "currentRatio": 2.25,
+      "quickRatio": 1.8,
+      "cashRatio": 0.5
+    },
+    "profitabilityRatios": {
+      "grossProfitMargin": 40.0,
+      "operatingMargin": 16.0,
+      "netProfitMargin": 10.5,
+      "returnOnAssets": 5.25,
+      "returnOnEquity": 8.75
+    },
+    "efficiencyRatios": {
+      "assetTurnover": 0.5,
+      "inventoryTurnover": 4.2,
+      "receivablesTurnover": 6.8
+    },
+    "leverageRatios": {
+      "debtToEquity": 0.67,
+      "debtToAssets": 0.4,
+      "interestCoverage": 8.0
+    }
+  },
+  {
+    "Id": 2,
+    "financialDataId": "2",
+    "liquidityRatios": {
+      "currentRatio": 2.0,
+      "quickRatio": 1.6,
+      "cashRatio": 0.4
+    },
+    "profitabilityRatios": {
+      "grossProfitMargin": 50.0,
+      "operatingMargin": 19.4,
+      "netProfitMargin": 13.5,
+      "returnOnAssets": 6.96,
+      "returnOnEquity": 11.61
+    },
+    "efficiencyRatios": {
+      "assetTurnover": 0.51,
+      "inventoryTurnover": 5.1,
+      "receivablesTurnover": 7.2
+    },
+    "leverageRatios": {
+      "debtToEquity": 0.67,
+      "debtToAssets": 0.4,
+      "interestCoverage": 14.0
+    }
+  }
+]

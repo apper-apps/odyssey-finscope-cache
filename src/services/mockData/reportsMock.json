@@ -1,0 +1,70 @@
+[
+  {
+    "Id": 1,
+    "financialDataId": "1",
+    "title": "Q1 2024 Financial Analysis - Acme Corporation",
+    "sections": [
+      {
+        "id": "executive-summary",
+        "title": "Executive Summary",
+        "content": "Acme Corporation demonstrated strong financial performance in Q1 2024 with revenue of $2.5M and net income of $262.5K, representing healthy profitability margins.",
+        "order": 1
+      },
+      {
+        "id": "liquidity-analysis",
+        "title": "Liquidity Analysis",
+        "content": "Current ratio of 2.25 indicates strong short-term liquidity position, well above industry benchmarks.",
+        "order": 2
+      },
+      {
+        "id": "profitability-analysis",
+        "title": "Profitability Analysis",
+        "content": "Gross profit margin of 40% and net profit margin of 10.5% demonstrate effective cost management and operational efficiency.",
+        "order": 3
+      }
+    ],
+    "charts": [
+      {
+        "id": "revenue-trend",
+        "type": "line",
+        "title": "Revenue Trend",
+        "data": [2000000, 2200000, 2400000, 2500000]
+      },
+      {
+        "id": "profit-margins",
+        "type": "bar",
+        "title": "Profit Margins",
+        "data": [40, 16, 10.5]
+      }
+    ],
+    "generatedAt": "2024-01-15T15:30:00Z"
+  },
+  {
+    "Id": 2,
+    "financialDataId": "2",
+    "title": "Q1 2024 Financial Analysis - Tech Solutions Inc.",
+    "sections": [
+      {
+        "id": "executive-summary",
+        "title": "Executive Summary",
+        "content": "Tech Solutions Inc. shows solid performance with revenue of $1.8M and strong operational efficiency metrics.",
+        "order": 1
+      },
+      {
+        "id": "liquidity-analysis",
+        "title": "Liquidity Analysis",
+        "content": "Current ratio of 2.0 provides adequate liquidity coverage for operational needs.",
+        "order": 2
+      }
+    ],
+    "charts": [
+      {
+        "id": "revenue-breakdown",
+        "type": "pie",
+        "title": "Revenue Breakdown",
+        "data": [1080000, 540000, 180000]
+      }
+    ],
+    "generatedAt": "2024-01-20T16:45:00Z"
+  }
+]

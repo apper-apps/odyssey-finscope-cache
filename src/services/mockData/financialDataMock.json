@@ -1,0 +1,89 @@
+[
+  {
+    "Id": 1,
+    "companyName": "Acme Corporation",
+    "period": "2024-Q1",
+    "incomeStatement": {
+      "revenue": 2500000,
+      "costOfGoodsSold": 1500000,
+      "grossProfit": 1000000,
+      "operatingExpenses": 600000,
+      "operatingIncome": 400000,
+      "interestExpense": 50000,
+      "netIncome": 262500
+    },
+    "balanceSheet": {
+      "currentAssets": 1800000,
+      "totalAssets": 5000000,
+      "currentLiabilities": 800000,
+      "totalLiabilities": 2000000,
+      "shareholderEquity": 3000000
+    },
+    "cashFlow": {
+      "operatingCashFlow": 450000,
+      "investingCashFlow": -200000,
+      "financingCashFlow": -100000,
+      "netCashFlow": 150000
+    },
+    "createdAt": "2024-01-15T09:00:00Z",
+    "updatedAt": "2024-01-15T09:00:00Z"
+  },
+  {
+    "Id": 2,
+    "companyName": "Tech Solutions Inc.",
+    "period": "2024-Q1",
+    "incomeStatement": {
+      "revenue": 1800000,
+      "costOfGoodsSold": 900000,
+      "grossProfit": 900000,
+      "operatingExpenses": 550000,
+      "operatingIncome": 350000,
+      "interestExpense": 25000,
+      "netIncome": 243750
+    },
+    "balanceSheet": {
+      "currentAssets": 1200000,
+      "totalAssets": 3500000,
+      "currentLiabilities": 600000,
+      "totalLiabilities": 1400000,
+      "shareholderEquity": 2100000
+    },
+    "cashFlow": {
+      "operatingCashFlow": 380000,
+      "investingCashFlow": -150000,
+      "financingCashFlow": -80000,
+      "netCashFlow": 150000
+    },
+    "createdAt": "2024-01-20T10:30:00Z",
+    "updatedAt": "2024-01-20T10:30:00Z"
+  },
+  {
+    "Id": 3,
+    "companyName": "Global Systems Ltd.",
+    "period": "2023-Q4",
+    "incomeStatement": {
+      "revenue": 3200000,
+      "costOfGoodsSold": 2000000,
+      "grossProfit": 1200000,
+      "operatingExpenses": 750000,
+      "operatingIncome": 450000,
+      "interestExpense": 60000,
+      "netIncome": 292500
+    },
+    "balanceSheet": {
+      "currentAssets": 2400000,
+      "totalAssets": 6800000,
+      "currentLiabilities": 1100000,
+      "totalLiabilities": 2800000,
+      "shareholderEquity": 4000000
+    },
+    "cashFlow": {
+      "operatingCashFlow": 520000,
+      "investingCashFlow": -300000,
+      "financingCashFlow": -120000,
+      "netCashFlow": 100000
+    },
+    "createdAt": "2023-12-28T14:45:00Z",
+    "updatedAt": "2023-12-28T14:45:00Z"
+  }
+]

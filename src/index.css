@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* React Toastify Custom Styles */
+.Toastify__toast-container {
+  @apply text-sm font-medium;
+  z-index: 9999 !important;
+}
+
+.Toastify__toast {
+  @apply rounded-lg shadow-premium backdrop-blur-sm border border-white/20;
+  min-height: auto !important;
+  padding: 12px 16px !important;
+}
+
+.Toastify__toast--success {
+  @apply bg-gradient-to-r from-green-500/90 to-green-600/90 text-white;
+}
+
+.Toastify__toast--error {
+  @apply bg-gradient-to-r from-red-500/90 to-red-600/90 text-white;
+}
+
+.Toastify__toast--warning {
+  @apply bg-gradient-to-r from-secondary-500/90 to-secondary-600/90 text-white;
+}
+
+.Toastify__toast--info {
+  @apply bg-gradient-to-r from-info/90 to-primary-400/90 text-white;
+}
+
+.Toastify__progress-bar {
+  @apply bg-white/30;
+}
+
+.Toastify__close-button {
+  @apply text-white/80 hover:text-white;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-400;
+}
+
+/* Custom Styles */
+.gradient-text {
+  @apply bg-gradient-to-r from-primary-500 to-primary-400 bg-clip-text text-transparent;
+}
+
+.gradient-border {
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(135deg, #1e3a5f, #3498db) border-box;
+  border: 2px solid transparent;
+}
+
+.glass-effect {
+  @apply bg-white/80 backdrop-blur-sm border border-white/20;
+}
+
+/* Chart Responsive Container */
+.chart-container {
+  @apply w-full;
+}
+
+.chart-container .apexcharts-canvas {
+  @apply w-full;
+}
+
+/* Form Focus Effects */
+.form-input:focus {
+  @apply ring-2 ring-primary-500/20 border-primary-500;
+}
+
+/* Button Animations */
+.btn-hover {
+  @apply transition-all duration-200 ease-out;
+}
+
+.btn-hover:hover {
+  @apply transform scale-[1.02] shadow-hover;
+}
+
+/* Card Animations */
+.card-hover {
+  @apply transition-all duration-300 ease-out;
+}
+
+.card-hover:hover {
+  @apply transform translate-y-[-2px] shadow-hover;
+}
+
+/* Loading Shimmer Effect */
+.shimmer {
+  background: linear-gradient(90deg, 
+    rgba(255,255,255,0) 0%, 
+    rgba(255,255,255,0.4) 50%, 
+    rgba(255,255,255,0) 100%);
+  background-size: 200px 100%;
+  background-repeat: no-repeat;
+  animation: shimmer 1.2s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200px 0; }
+  100% { background-position: calc(200px + 100%) 0; }
+}
+
+/* Metric Card Gradient Effects */
+.metric-card {
+  @apply relative overflow-hidden;
+}
+
+.metric-card::before {
+  content: '';
+  @apply absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent;
+  transform: translateX(-100%);
+  transition: transform 0.6s ease-out;
+}
+
+.metric-card:hover::before {
+  transform: translateX(100%);
+}
