@@ -150,9 +150,8 @@ const DataInput = () => {
     const errors = {}
 
     // Validate general information
-    if (!formData.companyName.trim()) {
-      errors["general.companyName"] = "Company name is required"
-    }
+// Company name is optional for individual users
+    // No validation required for personal finance tracking
     if (!formData.period.trim()) {
       errors["general.period"] = "Period is required"
     }
@@ -277,9 +276,9 @@ const DataInput = () => {
       {/* Header */}
       <div className="flex justify-between items-start">
         <div>
-          <h1 className="text-3xl font-bold gradient-text">Financial Data Input</h1>
+<h1 className="text-3xl font-bold gradient-text">My Financial Data Input</h1>
           <p className="text-gray-600 mt-2">
-            Enter your company's financial information to generate comprehensive analysis
+            Enter your personal financial information to track progress toward your goals like buying a house, saving for retirement, or building wealth
           </p>
         </div>
         <div className="flex gap-3">
@@ -304,13 +303,12 @@ const DataInput = () => {
         </CardHeader>
         <CardContent>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <FormField
-              label="Company Name"
+<FormField
+              label="Profile Name (Optional)"
               value={formData.companyName}
               onChange={(e) => handleInputChange("general", "companyName", e.target.value)}
               error={validationErrors["general.companyName"]}
-              placeholder="Enter company name"
-              required
+              placeholder="Enter a name for this financial profile (e.g., 'My 2024 Finances')"
             />
             <FormField
               label="Reporting Period"

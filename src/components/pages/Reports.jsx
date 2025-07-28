@@ -428,10 +428,10 @@ const Reports = () => {
   return (
     <div className="space-y-8">
       <div className="flex justify-between items-start">
-        <div>
-          <h1 className="text-3xl font-bold gradient-text">Financial Reports</h1>
+<div>
+          <h1 className="text-3xl font-bold gradient-text">My Financial Reports</h1>
           <p className="text-gray-600 mt-2">
-            Manage and generate comprehensive financial analysis reports
+            Generate and manage personal financial analysis reports to track your progress toward goals like home ownership, retirement, and wealth building
           </p>
         </div>
         <Button onClick={handleCreateNewReport}>
@@ -464,11 +464,11 @@ const Reports = () => {
             onAction={() => setSearchTerm("")}
           />
         ) : (
-          <Empty
-            title="No Reports Generated Yet"
-            description="Create your first financial analysis report to get started with comprehensive insights."
+<Empty
+            title="No Personal Reports Yet"
+            description="Create your first personal financial analysis report to track progress toward your goals and gain insights into your financial health."
             icon="FileBarChart"
-            actionLabel="Create First Report"
+            actionLabel="Create My First Report"
             onAction={handleCreateNewReport}
           />
         )

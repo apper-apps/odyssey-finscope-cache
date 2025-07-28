@@ -57,8 +57,8 @@ const Dashboard = () => {
   }, [])
 
   const handleCreateNewAnalysis = () => {
-    navigate("/data-input")
-    toast.info("Create your financial analysis by inputting data")
+navigate("/data-input")
+    toast.info("Start your journey to financial goals by inputting your data")
   }
 
   const handleViewReport = (reportId) => {
@@ -73,13 +73,13 @@ const Dashboard = () => {
     return <Error message={error} onRetry={loadDashboardData} />
   }
 
-  if (dashboardData.length === 0) {
+if (dashboardData.length === 0) {
     return (
       <Empty
-        title="Welcome to FinScope Pro"
-        description="Start by inputting your financial data to generate comprehensive analysis reports and insights."
+        title="Welcome to Personal Finance Analyzer"
+        description="Start your journey to financial freedom by inputting your personal financial data to track progress toward your goals like buying a house, saving for retirement, or debt elimination."
         icon="TrendingUp"
-        actionLabel="Add Financial Data"
+        actionLabel="Add My Financial Data"
         onAction={handleCreateNewAnalysis}
       />
     )
@@ -144,9 +144,9 @@ const Dashboard = () => {
       {/* Header */}
       <div className="flex justify-between items-start">
         <div>
-          <h1 className="text-3xl font-bold gradient-text">Financial Dashboard</h1>
+<h1 className="text-3xl font-bold gradient-text">My Financial Dashboard</h1>
           <p className="text-gray-600 mt-2">
-            Overview of your financial analysis and key performance metrics
+            Track your personal financial progress and key metrics toward achieving your goals
           </p>
         </div>
         <div className="flex gap-3">

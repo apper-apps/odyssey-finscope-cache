@@ -9,6 +9,9 @@ import Reports from "@/components/pages/Reports"
 import Settings from "@/components/pages/Settings"
 
 function App() {
+  // Set document title for personal finance focus
+  document.title = "Personal Finance Analyzer - Track Your Financial Goals"
+  
   return (
     <BrowserRouter>
       <div className="min-h-screen bg-gray-50">
