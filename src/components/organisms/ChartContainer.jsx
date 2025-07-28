@@ -1,9 +1,9 @@
-import { useState, useEffect } from "react"
-import Chart from "react-apexcharts"
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/atoms/Card"
-import Button from "@/components/atoms/Button"
-import ApperIcon from "@/components/ApperIcon"
-import { cn } from "@/utils/cn"
+import React, { useEffect, useState, useMemo } from "react";
+import Chart from "react-apexcharts";
+import ApperIcon from "@/components/ApperIcon";
+import Button from "@/components/atoms/Button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/atoms/Card";
+import { cn } from "@/utils/cn";
 
 const ChartContainer = ({ 
   title, 
@@ -16,11 +16,11 @@ const ChartContainer = ({
 }) => {
   const [chartOptions, setChartOptions] = useState({})
 
-  useEffect(() => {
+const memoizedOptions = useMemo(() => {
     const baseOptions = {
       chart: {
-        type: type,
-        height: height,
+        type: type || 'line',
+        height: height || 350,
         toolbar: {
           show: true,
           tools: {
@@ -44,7 +44,7 @@ const ChartContainer = ({
         width: 3
       },
       xaxis: {
-        categories: categories,
+        categories: categories || [],
         labels: {
           style: {
             colors: "#6b7280",
@@ -82,11 +82,15 @@ const ChartContainer = ({
           fontSize: "12px"
         }
       },
-      ...options
+      ...(options || {})
     }
 
-    setChartOptions(baseOptions)
-  }, [type, height, categories, options])
+    return baseOptions
+  }, [type, height, categories, JSON.stringify(options || {})])
+
+  useEffect(() => {
+    setChartOptions(memoizedOptions)
+  }, [memoizedOptions])
 
   return (
     <Card className={cn("chart-container", className)}>
